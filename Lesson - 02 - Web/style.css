@@ -1,0 +1,59 @@
+/* Removes standard margin and padding from all elements */
+* {
+	margin: 0;
+	padding: 0;
+	
+	/* # Variables # */
+	/* 
+	 * Variables start with doulbe dash "--"
+	 * It is good practice to prefix all variables with one letter of their type.
+	 * At least for colors
+	 * C = Color
+	 * T = Transition
+	 */
+	--CBlack: 		#1f1f1f;
+	--CWhite: 		#e9e6e6;
+	--CHighlight:	#ffce46;
+
+	--TSmooth: cubic-bezier(.32,.85,0,1.05);
+
+	/* Sets default foreground and background colors */
+	background-color: var(--CBlack);
+	color: var(--CWhite);
+
+	font-family: sans-serif;
+
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 1.45em;
+}
+
+nav.Bar{
+	padding: 1%;
+	width: 100%;
+
+	position: fixed;
+	top: 0;
+}
+
+nav.Bar .Item {
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 0 1%;
+
+	transition: ease-in-out 1s;
+}
+
+nav.Bar .Item:hover {
+	color: var(--CHighlight);
+}
+
+section {
+	padding: 2.5%;
+}
+
+img {
+	max-width: 100%;
+}
