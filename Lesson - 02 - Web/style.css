@@ -14,8 +14,9 @@
 	--CBlack: 		#1f1f1f;
 	--CWhite: 		#e9e6e6;
 	--CHighlight:	#ffce46;
+	--CBlurTransparent: #2a2a2aa4;
 
-	--TSmooth: cubic-bezier(.32,.85,0,1.05);
+	--TSmooth: cubic-bezier(0,1,1,1);
 
 	/* Sets default foreground and background colors */
 	background-color: var(--CBlack);
@@ -26,16 +27,24 @@
 	scroll-behavior: smooth;
 }
 
+html {
+	scroll-padding-top: 2vw;
+}
+
 h1 {
 	font-size: 1.45em;
 }
 
 nav.Bar{
-	padding: 1%;
+	height: 2vw;
+	line-height: 2vw;
 	width: 100%;
 
 	position: fixed;
 	top: 0;
+
+	background-color: var(--CBlurTransparent);
+	backdrop-filter: blur(5px);
 }
 
 nav.Bar .Item {
@@ -43,16 +52,25 @@ nav.Bar .Item {
 	font-size: 1.2em;
 	padding: 0 1%;
 
-	transition: ease-in-out 1s;
+	background-color: transparent;
+	backdrop-filter: blur(0px);
+
+	transition: all ease-in-out 1s;
 }
 
 nav.Bar .Item:hover {
 	color: var(--CHighlight);
+	backdrop-filter: blur(10px);
+}
+
+section#content {
+	padding-top: 2vw;
 }
 
 section {
 	padding: 2.5%;
 }
+
 
 img {
 	max-width: 100%;
