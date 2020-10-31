@@ -1,14 +1,12 @@
-// Here is all logic/behaviour
-
-let navItems = [];
+let navItems: NodeListOf<Element>;
 
 document.addEventListener("DOMContentLoaded", () => {
 	navItems = document.querySelectorAll("nav.Bar>.Item");
 	
-	for (const navItem of navItems) {
+	navItems.forEach( (navItem) => {
 		navItem.addEventListener("mouseenter", toggleNavBlur);
 		navItem.addEventListener("mouseleave", toggleNavBlur);
-	}
+	});
 });
 
 function toggleNavBlur(event) {
