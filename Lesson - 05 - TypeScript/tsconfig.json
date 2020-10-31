@@ -1,9 +1,10 @@
 {
 	"compilerOptions": {
 		"target": "esnext",
-		"watch": true,
+		//"watch": true,
 
 		"lib": ["dom", "es2017"],
+		"moduleResolution": "node",
 
 		"outDir": "./out",
 		"rootDir": "./src",
