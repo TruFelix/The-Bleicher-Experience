@@ -11,9 +11,9 @@
 	 * C = Color
 	 * T = Transition
 	 */
-	--CBlack: 		#1f1f1f;
-	--CWhite: 		#e9e6e6;
-	--CHighlight:	#ffce46;
+	--CBlack: 			#1f1f1f;
+	--CWhite: 			#e9e6e6;
+	--CHighlight:		#ffce46;
 	--CBlurTransparent: #2a2a2aa4;
 
 	--TSmooth: cubic-bezier(0,1,1,1);
@@ -26,6 +26,20 @@
 
 	scroll-behavior: smooth;
 }
+
+@media (prefers-color-scheme: light) {
+	* {
+		background-color: var(--CWhite);
+		color: var(--CBlack);
+	}
+}
+@media screen and (min-width: 720px) and (max-width: 960px) {
+	* {
+		background-color: var(--CWhite);
+		color: var(--CBlack);
+	}
+}
+
 
 html {
 	scroll-padding-top: 2vw;
@@ -52,6 +66,7 @@ nav.Bar {
 
 	transition: all var(--TSmooth) 1s;
 }
+
 nav.Bar.BackgroundBlured {
 	backdrop-filter: blur(2vw);
 }
@@ -77,14 +92,13 @@ nav.Bar:has(>.Item:hover) {
 }
 */
 
-section#content {
+main {
 	padding-top: 2vw;
 }
 
 section {
 	padding: 2.5%;
 }
-
 
 img {
 	max-width: 100%;
