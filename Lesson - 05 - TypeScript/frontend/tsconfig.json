@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"outDir": "./out",
+		"rootDir": "./src",
+
+		"strict": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ESNext", "DOM"],
+		"esModuleInterop": true,
+		
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		
+	}
+}

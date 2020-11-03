@@ -1,7 +1,6 @@
 exec
 ```powershell
 npm i -g typescript
-tsc --version
 ```
 
 app.ts
@@ -14,13 +13,18 @@ tsconfig.json
 ```json
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"watch": true,
-
-		"lib": ["dom", "es2017"],
-
 		"outDir": "./out",
 		"rootDir": "./src",
+
+		"strict": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ESNext", "DOM"],
+		"esModuleInterop": true,
+		
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		
 	}
 }
 ```

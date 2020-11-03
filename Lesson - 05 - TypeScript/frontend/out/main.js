@@ -1,3 +1,6 @@
+"use strict";
+// This file will be converted to JS code
+// this code will be sent to the client
 let navItems;
 document.addEventListener("DOMContentLoaded", () => {
     navItems = document.querySelectorAll("nav.Bar>.Item");
