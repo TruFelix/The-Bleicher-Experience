@@ -1,5 +1,5 @@
 /* Removes standard margin and padding from all elements */
-* {
+*:not(code) {
 	margin: 0;
 	padding: 0;
 	
@@ -40,6 +40,19 @@
 	}
 }
 
+code {
+	background-color: var(--CWhite);
+	color: var(--CBlack);
+	border-radius: 5px;
+	padding: 5px;
+	font-family: "JetBrains Mono", Consolas, monospace;
+	transition: color var(--TSmooth) 0.5s , background-color var(--TSmooth) 0.2s;
+}
+
+code:hover {
+	color: var(--CHighlight);
+	background-color: var(--CBlack);
+}
 
 html {
 	scroll-padding-top: 2vw;
@@ -47,6 +60,14 @@ html {
 
 h1 {
 	font-size: 1.45em;
+}
+
+p {
+	margin-bottom: 1%;
+}
+
+li {
+	margin: 15px;
 }
 
 .BackgroundBlured {
