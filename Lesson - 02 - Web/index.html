@@ -19,6 +19,8 @@
 		<a href="#intro" class="Item">Introduction</a>
 		<a href="#languageConcept" class="Item">Language Concept</a>
 		<a href="#navigatonBar" class="Item">Navigation-Bar</a>
+		<a href="#grid" class="Item">CSS-Grid</a>
+		<a href="#transition" class="Item">Transition</a>
 	</nav>
 
 	<main>
@@ -42,6 +44,56 @@
 				A Navigation-Bar enables the user to jump around the page with ease.
 				This is useful for the user as it enables him to quickly find the issue that he is looking for.
 			</p>
+		</section>
+
+		<section id="grid">
+			<h2>CSS-Grid</h2>
+			<p>
+				CSS-Grid is a relatively new technology for CSS. It is a very powerful tool, as you will find out
+				shortly.
+			</p>
+			<p>
+				You can use grid to create predictable behaviour when dealing with 2d arangements, though it also can be
+				used to create 1d arrangements.
+			</p>
+			<p>
+			<ol type="1">
+				<li>To enable grid just do <code lang="CSS">display: grid</code></li>
+				<li>
+					<p>And set <code>grid-template-column</code> and <code>grid-template-row</code></p>
+					<p>
+						These specify the size of each colomn and row. The unit to use is generaly <code>fr.</code>
+					</p>
+					<p>
+						A <code>fr</code> represents one fraction.
+					</p>
+					<p>
+						So if you have <code>grid-template-column: 1fr 1fr 3fr;</code>
+						1fr is 1/5th of the width, 3fr is 3/5ths of the whole width.
+					</p>
+				</li>
+
+			</ol>
+			</p>
+			<img loading="lazy" src="./grid.png">
+
+			<section class="grid-Demo">
+				<div class="grid-Demo" style="background-color: aquamarine;grid-area: div1;">1</div>
+				<div class="grid-Demo" style="background-color: violet; grid-area: div2">2</div>
+				<div class="grid-Demo" style="background-color: darkgreen; grid-area: div3">3</div>
+				<div class="grid-Demo" style="background-color: yellowgreen; grid-area: div4">4</div>
+				<div class="grid-Demo" style="background-color: tomato; grid-area: div5">5</div>
+			</section>
+		</section>
+
+		<section id="transition">
+			<h2>Transition</h2>
+			<p>To use transitions do the following:</p>
+			<ol>
+				<li>
+					<p>Add <code>transition: all ease-in-out 1s;</code> to element where transition should happen.</p>
+				</li>
+			</ol>
 		</section>
 	</main>
 

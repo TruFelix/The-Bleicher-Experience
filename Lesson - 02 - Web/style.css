@@ -27,22 +27,23 @@
 	scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: light) {
-	* {
-		background-color: var(--CWhite);
-		color: var(--CBlack);
-	}
-}
-@media screen and (min-width: 720px) and (max-width: 960px) {
-	* {
-		background-color: var(--CWhite);
-		color: var(--CBlack);
-	}
+code {
+	background-color: var(--CWhite);
+	color: var(--CBlack);
+	border-radius: 5px;
+	padding: 5px;
+	font-family: "JetBrains Mono", Consolas, monospace;
+
+	transition: color var(--TSmooth) 0.5s, background-color var(--TSmooth) 0.2s;
 }
 
+code:hover {
+	color: var(--CHighlight);
+	background-color: var(--CBlack);
+}
 
 html {
-	scroll-padding-top: 2vw;
+	scroll-padding-top: calc(2vw + 15px);
 }
 
 h1 {
@@ -97,9 +98,62 @@ main {
 }
 
 section {
-	padding: 2.5%;
+	padding: 0 2.5%;
+	margin: 2.5% 0;
 }
 
 img {
 	max-width: 100%;
+}
+
+
+
+/* ***GRID-DEMO*** */
+section.grid-Demo {
+
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas:
+		"div2 div2"
+		"div1 div3"
+		"div5 div4"
+	;
+}
+
+div.grid-Demo {
+	width: 100%;
+	height: 100%;
+	min-height: 75px;
+	min-width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+	*:not(code) {
+		background-color: var(--CWhite);
+		color: var(--CBlack);
+	}
+}
+@media screen and (min-width: 720px) and (max-width: 960px) {
+	*:not(code) {
+		background-color: var(--CWhite);
+		color: var(--CBlack);
+	}
+	
+	section.grid-Demo {
+		grid-template-areas: 
+			"div3 div4 div5"
+			"div3 div2 div5"
+			"div3 div1 ."
+		;
+		grid-template-columns: 2fr 1fr 3fr;
+	}
 }
