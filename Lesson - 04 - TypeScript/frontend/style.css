@@ -1,0 +1,91 @@
+/* Removes standard margin and padding from all elements */
+* {
+	margin: 0;
+	padding: 0;
+	
+	/* # Variables # */
+	/* 
+	 * Variables start with doulbe dash "--"
+	 * It is good practice to prefix all variables with one letter of their type.
+	 * At least for colors
+	 * C = Color
+	 * T = Transition
+	 */
+	--CBlack: 		#1f1f1f;
+	--CWhite: 		#e9e6e6;
+	--CHighlight:	#ffce46;
+	--CBlurTransparent: #2a2a2aa4;
+
+	--TSmooth: cubic-bezier(0,1,1,1);
+
+	/* Sets default foreground and background colors */
+	background-color: var(--CBlack);
+	color: var(--CWhite);
+
+	font-family: sans-serif;
+
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-padding-top: 2vw;
+}
+
+h1 {
+	font-size: 1.45em;
+}
+
+.BackgroundBlured {
+	backdrop-filter: blur(10px);
+}
+
+nav.Bar {
+	height: 2vw;
+	line-height: 2vw;
+	width: 100%;
+
+	position: fixed;
+	top: 0;
+
+	background-color: var(--CBlurTransparent);
+	backdrop-filter: blur(3px);
+
+	transition: all var(--TSmooth) 1s;
+}
+nav.Bar.BackgroundBlured {
+	backdrop-filter: blur(2vw);
+}
+
+
+nav.Bar .Item {
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 0 1%;
+
+	background-color: transparent;
+
+	transition: all ease-in-out 1s;
+}
+
+nav.Bar .Item:hover {
+	color: var(--CHighlight);
+}
+
+/* in future instead of JS
+nav.Bar:has(>.Item:hover) {
+	backdrop-filter: blur(10px);
+}
+*/
+
+section#content {
+	padding-top: 2vw;
+}
+
+section {
+	padding: 2.5%;
+}
+
+
+img {
+	max-width: 100%;
+}

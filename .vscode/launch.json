@@ -1,8 +1,8 @@
 {
 	"configurations": [
 		{
-			"command": "cd 'Lesson - 05 - TypeScript/backend'; npm start",
-			"name": "L05 - Server",
+			"command": "cd 'Lesson - 04 - TypeScript/backend'; npm run dev",
+			"name": "L04 - Server",
 			"request": "launch",
 			"type": "node-terminal"
 		}
