@@ -1,0 +1,195 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://background.png" type="Texture" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://light.png" type="Texture" id=3]
+[ext_resource path="res://spot.png" type="Texture" id=4]
+[ext_resource path="res://godot.png" type="Texture" id=5]
+[ext_resource path="res://godot_normal.png" type="Texture" id=6]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=3]
+blend_mode = 1
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 464.224, 31.8467 )
+
+[sub_resource type="OccluderPolygon2D" id=7]
+polygon = PoolVector2Array( -110.162, 91.6593, 815.809, 93.7783, 815.809, 146.751, -105.924, 148.87 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 51.2881
+height = 12.6849
+
+[sub_resource type="OccluderPolygon2D" id=5]
+polygon = PoolVector2Array( -56.9591, -19.9445, -47.7093, -32.9784, -38.039, -28.3535, -26.2664, -35.9215, -26.6869, -48.9554, -11.5507, -54.0008, -6.9258, -43.9101, 5.68765, -43.4896, 12.4148, -54.4213, 26.7101, -49.3759, 27.5509, -36.7624, 37.2213, -28.3535, 46.8916, -34.6602, 50.6756, -9.85375, 50.2551, 33.032, 35.9599, 49.8499, -2.30087, 54.8953, -40.1412, 46.9068, -51.9138, 33.032, -50.6524, -11.5355 )
+
+[node name="LightShadows" type="Node2D"]
+
+[node name="Ambient" type="CanvasModulate" parent="."]
+color = Color( 0.27451, 0.27451, 0.27451, 1 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 505.744, 216.723 )
+scale = Vector2( 128, 128 )
+texture = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 295.886, 216.938 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="Sprite"]
+margin_left = -22.5563
+margin_top = 64.6982
+margin_right = 24.4437
+margin_bottom = 78.6982
+text = "Normal"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteFlipX" type="Sprite" parent="."]
+position = Vector2( 543.341, 220.255 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="SpriteFlipX"]
+margin_left = 22.5564
+margin_top = 66.0347
+margin_right = 69.5564
+margin_bottom = 80.0347
+rect_scale = Vector2( -1, 1 )
+text = "Flip X"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteFlipY" type="Sprite" parent="."]
+position = Vector2( 291.308, 423.369 )
+scale = Vector2( 1, -1 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="SpriteFlipY"]
+margin_left = -23.3056
+margin_top = -67.2446
+margin_right = 23.6944
+margin_bottom = -53.2446
+rect_scale = Vector2( 1, -1 )
+text = "Flip Y"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteFlipXY" type="Sprite" parent="."]
+position = Vector2( 542.081, 424.696 )
+scale = Vector2( -1, -1 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="SpriteFlipXY"]
+margin_left = 23.9495
+margin_top = -67.5714
+margin_right = 81.9495
+margin_bottom = -53.5714
+rect_scale = Vector2( -1, -1 )
+text = "Flip X + Y"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Casters" type="Node2D" parent="."]
+
+[node name="RedLight" type="Light2D" parent="."]
+position = Vector2( 374.678, 326.566 )
+scale = Vector2( 1.02852, 0.964676 )
+texture = ExtResource( 3 )
+texture_scale = 2.56
+range_height = 10.0
+shadow_enabled = true
+shadow_item_cull_mask = 1025
+
+[node name="Blob" type="Sprite" parent="RedLight"]
+visible = false
+material = SubResource( 1 )
+position = Vector2( 233, -4 )
+texture = ExtResource( 4 )
+
+[node name="GreenLight" type="Light2D" parent="."]
+visible = false
+position = Vector2( 753.756, 314.336 )
+texture = ExtResource( 3 )
+color = Color( 0.49247, 0.878537, 0.409146, 1 )
+shadow_enabled = true
+shadow_gradient_length = 1.2
+shadow_filter = 3
+shadow_filter_smooth = 7.1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="blob" type="Sprite" parent="GreenLight"]
+visible = false
+material = SubResource( 2 )
+texture = ExtResource( 4 )
+
+[node name="BlueLight" type="Light2D" parent="."]
+visible = false
+position = Vector2( 692.078, 31.1773 )
+texture = ExtResource( 3 )
+color = Color( 0.396752, 0.446392, 0.929792, 1 )
+shadow_enabled = true
+shadow_gradient_length = 1.4
+shadow_filter = 3
+shadow_filter_smooth = 5.3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="blob" type="Sprite" parent="BlueLight"]
+material = SubResource( 3 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 355.063, 120.679 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="StaticBody2D"]
+occluder = SubResource( 7 )
+
+[node name="Player" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+script = ExtResource( 2 )
+engine_thrust = 500
+spin_thrust = 25000
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource( 4 )
+
+[node name="ShadowCaster" type="Sprite" parent="Player"]
+texture = ExtResource( 5 )
+
+[node name="Occluder" type="LightOccluder2D" parent="Player/ShadowCaster"]
+light_mask = 1024
+position = Vector2( 3.05176e-05, -0.236053 )
+z_index = 2
+occluder = SubResource( 5 )
+light_mask = 1024
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+smoothing_speed = 3.0
