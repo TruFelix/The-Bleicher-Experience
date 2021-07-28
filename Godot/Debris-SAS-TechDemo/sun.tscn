@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://textures/light.png" type="Texture" id=1]
+[ext_resource path="res://textures/a3095c92-7acb-43ac-a006-679ab8d1bb55_image8.png.2000x0x1.png" type="Texture" id=2]
+
+[node name="sun" type="Light2D"]
+position = Vector2( 0, -18.6667 )
+z_index = 200
+texture = ExtResource( 1 )
+texture_scale = 10.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0.87451 )
+shadow_buffer_size = 16384
+shadow_filter = 5
+shadow_filter_smooth = 2.0
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
