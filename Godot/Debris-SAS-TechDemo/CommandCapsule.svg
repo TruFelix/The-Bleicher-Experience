@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00a8ff" stop-opacity="0.522"/>
+      <stop offset="1" stop-color="#003e5e" stop-opacity="0.522"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="maroon"/>
+    </linearGradient>
+  </defs>
+  <g id="CommandCapsule" transform="translate(-928 -508)">
+    <g id="Rechteck_1" data-name="Rechteck 1" transform="translate(928 508)" fill="#5a5a5a" stroke="#2e2e2e" stroke-width="1">
+      <rect width="64" height="64" rx="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="63" height="63" rx="8.5" fill="none"/>
+    </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(939.5 519.5)" stroke="#7b7b7b" stroke-width="2" fill="url(#linear-gradient)">
+      <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+      <circle cx="20.5" cy="20.5" r="19.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="0.5" cy="0.5" r="0.5" transform="translate(959.5 520)" fill="#fff"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="0.5" cy="0.5" r="0.5" transform="translate(959.5 559)" fill="#fff"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="0.5" cy="0.5" r="0.5" transform="translate(979 539.5)" fill="#fff"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="0.5" cy="0.5" r="0.5" transform="translate(940 539.5)" fill="#fff"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="0.5" cy="0.5" r="0.5" transform="translate(945.7 525.7)" fill="#fff"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="0.5" cy="0.5" r="0.5" transform="translate(973.3 553.3)" fill="#fff"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="0.5" cy="0.5" r="0.5" transform="translate(945.7 553.3)" fill="#fff"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="0.5" cy="0.5" r="0.5" transform="translate(973.3 525.7)" fill="#fff"/>
+    <rect id="Rechteck_2" data-name="Rechteck 2" width="28" height="1" transform="translate(946 510)" fill="#fff"/>
+    <rect id="Rechteck_3" data-name="Rechteck 3" width="28" height="1" transform="translate(946 569)" fill="#fff"/>
+    <rect id="Rechteck_4" data-name="Rechteck 4" width="28" height="1" transform="translate(990 526) rotate(90)" fill="#fff"/>
+    <rect id="Rechteck_5" data-name="Rechteck 5" width="28" height="1" transform="translate(931 526) rotate(90)" fill="#fff"/>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(931 511)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(981 511)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(931 561)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(981 561)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+    <path id="Polygon_1" data-name="Polygon 1" d="M1.5,0,3,2H0Z" transform="translate(943.879 554) rotate(45)"/>
+    <text id="pressurized_CABIN_" data-name="pressurizedCABIN !" transform="translate(941.768 558.232) rotate(45)" font-size="2" font-family="SegoeUI, Segoe UI"><tspan x="-6.055" y="0">PRESSURIZED</tspan><tspan x="-3.41" y="3">CABIN !</tspan><tspan x="0" y="6"></tspan></text>
+    <path id="Pfad_1" data-name="Pfad 1" d="M975.618,555.609h0c.112-.124.216-.238.5-.562,13.22-15.17-.5-30.66-.5-30.66" transform="translate(0.825 -0.109)" fill="rgba(255,255,255,0)" stroke="#000" stroke-width="1"/>
+    <path id="Polygon_2" data-name="Polygon 2" d="M2,0,4,3H0Z" transform="matrix(0.799, -0.602, 0.602, 0.799, 973.3, 523.407)"/>
+    <path id="Polygon_3" data-name="Polygon 3" d="M1.5,0,3,2H0Z" transform="translate(972.772 522.746) rotate(-149)"/>
+    <text id="LOCKED" transform="translate(975.956 521.846) rotate(-149)" font-size="2" font-family="SegoeUI, Segoe UI"><tspan x="-3.597" y="2">LOCKED</tspan></text>
+    <path id="Polygon_4" data-name="Polygon 4" d="M1.5,0,3,2H0Z" transform="matrix(0.829, -0.559, 0.559, 0.829, 970.3, 558.842)"/>
+    <text id="OPEN" transform="matrix(0.829, -0.559, 0.559, 0.829, 968.931, 562.273)" font-size="2" font-family="SegoeUI, Segoe UI"><tspan x="-2.568" y="2">OPEN</tspan></text>
+  </g>
+</svg>
