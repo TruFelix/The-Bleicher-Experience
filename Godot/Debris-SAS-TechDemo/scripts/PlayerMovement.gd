@@ -5,10 +5,12 @@ const Telemetry = preload("./defs/Telemetry.gd")
 
 # path to playerRoot
 export (NodePath) var pathToRigidbody
+export (NodePath) var pathToModulesRoot
 export (float) var thrust = 10
+export (float) var angularThrust = 1
 export (float) var sasStrength = 0.01
 
-onready var rigidbody : RigidBody2D = get_node(pathToRigidbody) as RigidBody2D
+var rigidbody : RigidBody2D
 
 # Signals
 signal move(delta, movement)
@@ -18,7 +20,17 @@ signal telemetry(delta, telemetry)
 # State
 var sasEnabled: bool = false
 
-func _process(delta):
+func _enter_tree():
+	rigidbody = get_node(pathToRigidbody) as RigidBody2D
+	
+	var modulesRoot: Node2D = get_node(pathToModulesRoot) as Node2D
+	var modules: Array = modulesRoot.get_children() as Array
+	for module in modules:
+		var rb : RigidBody2D = module as RigidBody2D
+		rb.mode = RigidBody2D.MODE_STATIC
+		rigidbody.mass+= rb.mass
+
+func _physics_process(delta):
 	var movement = handleLinear(delta)
 	var rotation = handleAngular(delta)
 	handleSas(delta, movement, rotation)
@@ -26,8 +38,8 @@ func _process(delta):
 	act(movement, rotation)
 	
 	# tell everyone all actions
-	emit_signal("move", delta, movement)
 	emit_signal("rotate", delta, rotation)
+	emit_signal("move", delta, movement)
 	emit_signal("telemetry", delta, getTelemetry())
 
 
@@ -40,8 +52,13 @@ func getTelemetry() -> Telemetry:
 	)
 
 func act(move: Vector2, rotate: float):
-	rigidbody.apply_central_impulse(move * thrust)
-	rigidbody.apply_torque_impulse(rotate * thrust)
+	move.x = clamp(move.x, -1, 1)
+	move.y = clamp(move.y, -1, 1)
+	rotate = clamp(rotate, -1, 1)
+	
+	
+	rigidbody.apply_torque_impulse(rotate * angularThrust)
+	rigidbody.apply_central_impulse(move.rotated(rigidbody.rotation) * thrust)
 
 func handleLinear(delta) -> Vector2:
 	var inputVector = Vector2.ZERO
@@ -59,8 +76,9 @@ func handleSas(delta: float, inputVector, inputRotate):
 	sas(delta, sasEnabled, inputVector, inputRotate)
 
 func sas(delta: float, enabled: bool, inputVector: Vector2, inputRotate: float):
-	linear_sas(delta, enabled, inputVector)
-	angular_sas(delta, enabled, inputRotate)
+	if enabled:
+		linear_sas(delta, true, inputVector)
+		angular_sas(delta, true, inputRotate)
 
 func angular_sas(delta: float, enabled: bool, inputRotate: float):
 	# no sas if there's input
@@ -70,21 +88,21 @@ func angular_sas(delta: float, enabled: bool, inputRotate: float):
 		var currentAngularSpeed = rigidbody.angular_velocity
 		var sasAngularImpulse : float = rigidbody.angular_velocity * -1 * sasStrength
 		
-		if currentAngularSpeed < 10 and currentAngularSpeed > 0.1:
+		if currentAngularSpeed < 10 and currentAngularSpeed > 1:
 			sasAngularImpulse = clamp(rigidbody.angular_velocity * -1, -1, 1)
-		elif currentAngularSpeed <= 0.1:
+		elif currentAngularSpeed <= 1:
 			sasAngularImpulse = rigidbody.angular_velocity * -1
 			
 		sasAngularImpulse *= delta
 		
 		emit_signal("rotate", delta, sasAngularImpulse)
-		return rigidbody.apply_torque_impulse(sasAngularImpulse)
+		act(Vector2.ZERO, sasAngularImpulse)
 
 func linear_sas(delta: float, enabled: bool, inputVector: Vector2):
 	if enabled:
 		# default sasImpulse
 		var currentSpeed = rigidbody.linear_velocity.length()
-		var sasImpulse : Vector2 = rigidbody.linear_velocity * -1 * sasStrength
+		var sasImpulse : Vector2 = rigidbody.linear_velocity.rotated(rigidbody.rotation * -1) * -1 * sasStrength
 		
 		# no sas if there's input
 		# otherwise max speed is limited by sas
@@ -99,11 +117,11 @@ func linear_sas(delta: float, enabled: bool, inputVector: Vector2):
 			return
 			
 		if currentSpeed < 10 and currentSpeed > 0.1:
-			sasImpulse = rigidbody.linear_velocity.normalized() * (sasStrength * 10) * -1
+			sasImpulse = rigidbody.linear_velocity.normalized().rotated(rigidbody.rotation * -1) * (sasStrength * 10) * -1
 		elif currentSpeed <= 0.1:
-			sasImpulse = rigidbody.linear_velocity * -1
+			sasImpulse = rigidbody.linear_velocity.rotated(rigidbody.rotation * -1) * -1
 		
 		sasImpulse *= delta
 		
 		emit_signal("move", delta, sasImpulse)
-		return rigidbody.apply_central_impulse(sasImpulse)
+		act(sasImpulse, 0)
