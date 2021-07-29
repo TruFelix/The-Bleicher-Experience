@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://CommandCapsule.svg" type="Texture" id=1]
 [ext_resource path="res://scripts/PlayerMovement.gd" type="Script" id=2]
+[ext_resource path="res://CapsuleNormalMap.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 99.0797, 99.4556 )
+extents = Vector2( 93.5727, 95.8883 )
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -84.8988, -95.8883, 83.4706, -95.3271, 91.889, -91.3985, 95.2564, -81.2963, 95.8176, 84.2668, 91.3278, 91.0016, 82.9093, 96.6139, -83.2151, 94.9302, -92.756, 91.0016, -95.0009, 83.7056, -95.0009, -84.6637, -91.6335, -91.9597 )
 
 [node name="rigidbody" type="RigidBody2D"]
 gravity_scale = 0.0
@@ -12,6 +16,9 @@ linear_damp = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="CollisionShape2D"]
+occluder = SubResource( 2 )
 
 [node name="player" type="Node2D" parent="."]
 
@@ -23,5 +30,8 @@ script = ExtResource( 2 )
 pathToRigidbody = NodePath("../..")
 
 [node name="Sprite" type="Sprite" parent="player"]
-scale = Vector2( 0.5, 0.5 )
+light_mask = 2
+scale = Vector2( 0.194, 0.194 )
+z_index = 1
 texture = ExtResource( 1 )
+normal_map = ExtResource( 3 )

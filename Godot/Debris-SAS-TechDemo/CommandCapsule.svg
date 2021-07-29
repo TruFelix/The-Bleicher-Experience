@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#00a8ff" stop-opacity="0.522"/>
@@ -9,50 +9,54 @@
       <stop offset="1" stop-color="maroon"/>
     </linearGradient>
   </defs>
-  <g id="CommandCapsule" transform="translate(-928 -508)">
-    <g id="Rechteck_1" data-name="Rechteck 1" transform="translate(928 508)" fill="#5a5a5a" stroke="#2e2e2e" stroke-width="1">
-      <rect width="64" height="64" rx="9" stroke="none"/>
-      <rect x="0.5" y="0.5" width="63" height="63" rx="8.5" fill="none"/>
+  <g id="CommandCapsule" transform="translate(-910.876 -490.876)">
+    <g id="Rechteck_1" data-name="Rechteck 1" transform="translate(927.461 507.446)" fill="#5a5a5a" stroke="#2e2e2e" stroke-width="64">
+      <rect width="991.798" height="990.86" rx="75" stroke="none"/>
+      <rect x="32" y="32" width="927.798" height="926.86" rx="43" fill="none"/>
     </g>
-    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(939.5 519.5)" stroke="#7b7b7b" stroke-width="2" fill="url(#linear-gradient)">
-      <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
-      <circle cx="20.5" cy="20.5" r="19.5" fill="none"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1105.512 685.328)" stroke="#7b7b7b" stroke-width="30" fill="url(#linear-gradient)">
+      <ellipse cx="317.394" cy="317.094" rx="317.394" ry="317.094" stroke="none"/>
+      <ellipse cx="317.394" cy="317.094" rx="302.394" ry="302.094" fill="none"/>
     </g>
-    <circle id="Ellipse_2" data-name="Ellipse 2" cx="0.5" cy="0.5" r="0.5" transform="translate(959.5 520)" fill="#fff"/>
-    <circle id="Ellipse_3" data-name="Ellipse 3" cx="0.5" cy="0.5" r="0.5" transform="translate(959.5 559)" fill="#fff"/>
-    <circle id="Ellipse_4" data-name="Ellipse 4" cx="0.5" cy="0.5" r="0.5" transform="translate(979 539.5)" fill="#fff"/>
-    <circle id="Ellipse_5" data-name="Ellipse 5" cx="0.5" cy="0.5" r="0.5" transform="translate(940 539.5)" fill="#fff"/>
-    <circle id="Ellipse_6" data-name="Ellipse 6" cx="0.5" cy="0.5" r="0.5" transform="translate(945.7 525.7)" fill="#fff"/>
-    <circle id="Ellipse_7" data-name="Ellipse 7" cx="0.5" cy="0.5" r="0.5" transform="translate(973.3 553.3)" fill="#fff"/>
-    <circle id="Ellipse_8" data-name="Ellipse 8" cx="0.5" cy="0.5" r="0.5" transform="translate(945.7 553.3)" fill="#fff"/>
-    <circle id="Ellipse_9" data-name="Ellipse 9" cx="0.5" cy="0.5" r="0.5" transform="translate(973.3 525.7)" fill="#fff"/>
-    <rect id="Rechteck_2" data-name="Rechteck 2" width="28" height="1" transform="translate(946 510)" fill="#fff"/>
-    <rect id="Rechteck_3" data-name="Rechteck 3" width="28" height="1" transform="translate(946 569)" fill="#fff"/>
-    <rect id="Rechteck_4" data-name="Rechteck 4" width="28" height="1" transform="translate(990 526) rotate(90)" fill="#fff"/>
-    <rect id="Rechteck_5" data-name="Rechteck 5" width="28" height="1" transform="translate(931 526) rotate(90)" fill="#fff"/>
-    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(931 511)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
-      <circle cx="4" cy="4" r="4" stroke="none"/>
-      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1415.164 693.062)" fill="#fff"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1415.164 1296.313)" fill="#fff"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1717.076 994.688)" fill="#fff"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1113.253 994.688)" fill="#fff"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1201.504 781.229)" fill="#fff"/>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1628.824 1208.146)" fill="#fff"/>
+    <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1201.504 1208.146)" fill="#fff"/>
+    <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1628.824 781.229)" fill="#fff"/>
+    <rect id="Rechteck_2" data-name="Rechteck 2" width="435.226" height="14.548" transform="translate(1206.149 531.384)" fill="#fff"/>
+    <rect id="Rechteck_3" data-name="Rechteck 3" width="435.226" height="16.164" transform="translate(1205.747 1460.139)" fill="#fff"/>
+    <rect id="Rechteck_4" data-name="Rechteck 4" width="434.815" height="16.179" transform="translate(1897.235 785.469) rotate(90)" fill="#fff"/>
+    <rect id="Rechteck_5" data-name="Rechteck 5" width="434.815" height="14.561" transform="translate(965.984 785.469) rotate(90)" fill="#fff"/>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(972.764 552.705)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
     </g>
-    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(981 511)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
-      <circle cx="4" cy="4" r="4" stroke="none"/>
-      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(1747.757 552.705)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
     </g>
-    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(931 561)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
-      <circle cx="4" cy="4" r="4" stroke="none"/>
-      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(972.764 1326.966)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
     </g>
-    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(981 561)" stroke="#2e2e2e" stroke-width="1" fill="url(#linear-gradient-2)">
-      <circle cx="4" cy="4" r="4" stroke="none"/>
-      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(1747.757 1326.966)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
     </g>
-    <path id="Polygon_1" data-name="Polygon 1" d="M1.5,0,3,2H0Z" transform="translate(943.879 554) rotate(45)"/>
-    <text id="pressurized_CABIN_" data-name="pressurizedCABIN !" transform="translate(941.768 558.232) rotate(45)" font-size="2" font-family="SegoeUI, Segoe UI"><tspan x="-6.055" y="0">PRESSURIZED</tspan><tspan x="-3.41" y="3">CABIN !</tspan><tspan x="0" y="6"></tspan></text>
-    <path id="Pfad_1" data-name="Pfad 1" d="M975.618,555.609h0c.112-.124.216-.238.5-.562,13.22-15.17-.5-30.66-.5-30.66" transform="translate(0.825 -0.109)" fill="rgba(255,255,255,0)" stroke="#000" stroke-width="1"/>
-    <path id="Polygon_2" data-name="Polygon 2" d="M2,0,4,3H0Z" transform="matrix(0.799, -0.602, 0.602, 0.799, 973.3, 523.407)"/>
-    <path id="Polygon_3" data-name="Polygon 3" d="M1.5,0,3,2H0Z" transform="translate(972.772 522.746) rotate(-149)"/>
-    <text id="LOCKED" transform="translate(975.956 521.846) rotate(-149)" font-size="2" font-family="SegoeUI, Segoe UI"><tspan x="-3.597" y="2">LOCKED</tspan></text>
-    <path id="Polygon_4" data-name="Polygon 4" d="M1.5,0,3,2H0Z" transform="matrix(0.829, -0.559, 0.559, 0.829, 970.3, 558.842)"/>
-    <text id="OPEN" transform="matrix(0.829, -0.559, 0.559, 0.829, 968.931, 562.273)" font-size="2" font-family="SegoeUI, Segoe UI"><tspan x="-2.568" y="2">OPEN</tspan></text>
+    <path id="Polygon_1" data-name="Polygon 1" d="M23.206,0,46.411,30.929H0Z" transform="translate(1173.305 1218.973) rotate(45)"/>
+    <text id="pressurized_CABIN_" data-name="pressurizedCABIN !" transform="translate(1130.065 1266.941) rotate(45)" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="-72.662" y="0">PRESSURIZED</tspan><tspan x="-40.916" y="32">CABIN !</tspan><tspan x="0" y="64"></tspan></text>
+    <path id="Pfad_1" data-name="Pfad 1" d="M975.617,1007.337h0c1.728-1.918,3.347-3.678,7.7-8.7,204.673-234.642-7.7-474.254-7.7-474.254" transform="translate(701.868 234.84)" fill="none" stroke="#000" stroke-width="23"/>
+    <path id="Polygon_2" data-name="Polygon 2" d="M30.965,0,61.93,46.448H0Z" transform="matrix(0.799, -0.602, 0.602, 0.799, 1628.824, 745.766)"/>
+    <path id="Polygon_3" data-name="Polygon 3" d="M23.212,0,46.423,30.924H0Z" transform="translate(1620.645 735.534) rotate(-149)"/>
+    <path id="Polygon_4" data-name="Polygon 4" d="M23.224,0,46.448,30.965H0Z" transform="matrix(0.829, -0.559, 0.559, 0.829, 1582.377, 1293.868)"/>
+    <rect id="Rechteck_6" data-name="Rechteck 6" width="568.348" height="16.585" transform="translate(1934.876 718.702) rotate(90)" fill="#262626"/>
+    <rect id="Rechteck_7" data-name="Rechteck 7" width="568.348" height="16.585" transform="translate(927.461 718.702) rotate(90)" fill="#262626"/>
+    <rect id="Rechteck_8" data-name="Rechteck 8" width="568.886" height="16.57" transform="translate(1138.917 1498.306)" fill="#262626"/>
+    <rect id="Rechteck_9" data-name="Rechteck 9" width="568.886" height="16.57" transform="translate(1138.917 490.876)" fill="#262626"/>
+    <text id="OPEN" transform="matrix(0.839, -0.545, 0.545, 0.839, 1612.068, 1340.557)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">OPEN</tspan></text>
+    <text id="LOCKED" transform="matrix(-0.839, -0.545, 0.545, -0.839, 1663.646, 700.251)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">LOCKED</tspan></text>
   </g>
 </svg>

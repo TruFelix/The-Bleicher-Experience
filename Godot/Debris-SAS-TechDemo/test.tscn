@@ -1,8 +1,27 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://textures/a3095c92-7acb-43ac-a006-679ab8d1bb55_image8.png.2000x0x1.png" type="Texture" id=2]
+[ext_resource path="res://textures/light.png" type="Texture" id=3]
 
 [node name="root" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 100, 100 )
+position = Vector2( 66.0205, 71.6838 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 904.623, 40.3174 )
+texture = ExtResource( 3 )
+texture_scale = 7.73
+energy = 4.65
+range_height = 124.8
+range_item_cull_mask = 1048575
+shadow_enabled = true
+shadow_item_cull_mask = 1048573
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 29.3997, 40.9813 )
+scale = Vector2( 10, 10 )
+z_index = -377
+z_as_relative = false
+texture = ExtResource( 2 )
