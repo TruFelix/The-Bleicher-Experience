@@ -1,11 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://ResourceModule.tscn" type="PackedScene" id=1]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 1, 1 )
-
-[sub_resource type="OccluderPolygon2D" id=2]
+[sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( -21.3333, -19.6667, 20.3333, -19.3333, 19.6667, 20, -20.3333, 20.3333 )
 
 [node name="RigidBody2D" instance=ExtResource( 1 )]
@@ -13,11 +10,5 @@ can_sleep = true
 linear_damp = -1.0
 angular_damp = -1.0
 
-[node name="Collider" parent="." index="0"]
-shape = SubResource( 1 )
-
 [node name="LightOccluder2D" parent="Module/Visual" index="1"]
-occluder = SubResource( 2 )
-
-[node name="Resources" parent="Module" index="1"]
-initialFuel = 200.0
+occluder = SubResource( 1 )

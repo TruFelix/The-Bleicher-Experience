@@ -7,9 +7,7 @@
 [ext_resource path="res://theme.tres" type="Theme" id=5]
 [ext_resource path="res://FuelModule.tscn" type="PackedScene" id=6]
 [ext_resource path="res://textures/light.png" type="Texture" id=7]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 1, 1 )
+[ext_resource path="res://Unit1.tres" type="Shape2D" id=8]
 
 [sub_resource type="OccluderPolygon2D" id=2]
 polygon = PoolVector2Array( -21.3333, -19.6667, 20.3333, -19.3333, 19.6667, 20, -20.3333, 20.3333 )
@@ -19,7 +17,7 @@ gravity_scale = 0.0
 linear_damp = 0.0
 
 [node name="Collider" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = ExtResource( 8 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 z_index = 4096
@@ -128,6 +126,11 @@ occluder = SubResource( 2 )
 [node name="RigidBody2D" parent="player/Modules" instance=ExtResource( 6 )]
 position = Vector2( 50, 0 )
 gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("../player/Modules/RigidBody2D")
+disable_collision = false
 
 [node name="Forward" type="Sprite" parent="."]
 position = Vector2( 0, -150 )
