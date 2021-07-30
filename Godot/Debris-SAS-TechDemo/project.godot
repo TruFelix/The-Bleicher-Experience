@@ -19,7 +19,7 @@ use_filter=false
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/display_controller/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [input]
 
