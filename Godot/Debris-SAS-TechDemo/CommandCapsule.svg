@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#00a8ff" stop-opacity="0.522"/>
-      <stop offset="1" stop-color="#003e5e" stop-opacity="0.522"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="red"/>
       <stop offset="1" stop-color="maroon"/>
     </linearGradient>
@@ -14,49 +10,102 @@
       <rect width="991.798" height="990.86" rx="75" stroke="none"/>
       <rect x="32" y="32" width="927.798" height="926.86" rx="43" fill="none"/>
     </g>
-    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1105.512 685.328)" stroke="#7b7b7b" stroke-width="30" fill="url(#linear-gradient)">
-      <ellipse cx="317.394" cy="317.094" rx="317.394" ry="317.094" stroke="none"/>
-      <ellipse cx="317.394" cy="317.094" rx="302.394" ry="302.094" fill="none"/>
-    </g>
-    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1415.164 693.062)" fill="#fff"/>
-    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1415.164 1296.313)" fill="#fff"/>
-    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1717.076 994.688)" fill="#fff"/>
-    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1113.253 994.688)" fill="#fff"/>
-    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1201.504 781.229)" fill="#fff"/>
-    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1628.824 1208.146)" fill="#fff"/>
-    <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1201.504 1208.146)" fill="#fff"/>
-    <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1628.824 781.229)" fill="#fff"/>
-    <rect id="Rechteck_2" data-name="Rechteck 2" width="435.226" height="14.548" transform="translate(1206.149 531.384)" fill="#fff"/>
-    <rect id="Rechteck_3" data-name="Rechteck 3" width="435.226" height="16.164" transform="translate(1205.747 1460.139)" fill="#fff"/>
-    <rect id="Rechteck_4" data-name="Rechteck 4" width="434.815" height="16.179" transform="translate(1897.235 785.469) rotate(90)" fill="#fff"/>
-    <rect id="Rechteck_5" data-name="Rechteck 5" width="434.815" height="14.561" transform="translate(965.984 785.469) rotate(90)" fill="#fff"/>
-    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(972.764 552.705)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
-      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
-      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
-    </g>
-    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(1747.757 552.705)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
-      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
-      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
-    </g>
-    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(972.764 1326.966)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
-      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
-      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
-    </g>
-    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(1747.757 1326.966)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient-2)">
-      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
-      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
-    </g>
-    <path id="Polygon_1" data-name="Polygon 1" d="M23.206,0,46.411,30.929H0Z" transform="translate(1173.305 1218.973) rotate(45)"/>
-    <text id="pressurized_CABIN_" data-name="pressurizedCABIN !" transform="translate(1130.065 1266.941) rotate(45)" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="-72.662" y="0">PRESSURIZED</tspan><tspan x="-40.916" y="32">CABIN !</tspan><tspan x="0" y="64"></tspan></text>
-    <path id="Pfad_1" data-name="Pfad 1" d="M975.617,1007.337h0c1.728-1.918,3.347-3.678,7.7-8.7,204.673-234.642-7.7-474.254-7.7-474.254" transform="translate(701.868 234.84)" fill="none" stroke="#000" stroke-width="23"/>
-    <path id="Polygon_2" data-name="Polygon 2" d="M30.965,0,61.93,46.448H0Z" transform="matrix(0.799, -0.602, 0.602, 0.799, 1628.824, 745.766)"/>
-    <path id="Polygon_3" data-name="Polygon 3" d="M23.212,0,46.423,30.924H0Z" transform="translate(1620.645 735.534) rotate(-149)"/>
-    <path id="Polygon_4" data-name="Polygon 4" d="M23.224,0,46.448,30.965H0Z" transform="matrix(0.829, -0.559, 0.559, 0.829, 1582.377, 1293.868)"/>
     <rect id="Rechteck_6" data-name="Rechteck 6" width="568.348" height="16.585" transform="translate(1934.876 718.702) rotate(90)" fill="#262626"/>
     <rect id="Rechteck_7" data-name="Rechteck 7" width="568.348" height="16.585" transform="translate(927.461 718.702) rotate(90)" fill="#262626"/>
     <rect id="Rechteck_8" data-name="Rechteck 8" width="568.886" height="16.57" transform="translate(1138.917 1498.306)" fill="#262626"/>
     <rect id="Rechteck_9" data-name="Rechteck 9" width="568.886" height="16.57" transform="translate(1138.917 490.876)" fill="#262626"/>
-    <text id="OPEN" transform="matrix(0.839, -0.545, 0.545, 0.839, 1612.068, 1340.557)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">OPEN</tspan></text>
-    <text id="LOCKED" transform="matrix(-0.839, -0.545, 0.545, -0.839, 1663.646, 700.251)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">LOCKED</tspan></text>
+    <rect id="Rechteck_5" data-name="Rechteck 5" width="434.815" height="14.561" transform="translate(965.984 785.469) rotate(90)" fill="#fff"/>
+    <rect id="Rechteck_4" data-name="Rechteck 4" width="434.815" height="16.179" transform="translate(1897.235 785.469) rotate(90)" fill="#fff"/>
+    <rect id="Rechteck_3" data-name="Rechteck 3" width="435.226" height="16.164" transform="translate(1205.747 1460.139)" fill="#fff"/>
+    <rect id="Rechteck_2" data-name="Rechteck 2" width="435.226" height="14.548" transform="translate(1206.149 531.384)" fill="#fff"/>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(1747.757 1326.966)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
+    </g>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(972.764 552.705)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(1747.757 552.705)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(972.764 1326.966)" stroke="#2e2e2e" stroke-width="21" fill="url(#linear-gradient)">
+      <ellipse cx="62.291" cy="62.232" rx="62.291" ry="62.232" stroke="none"/>
+      <ellipse cx="62.291" cy="62.232" rx="51.791" ry="51.732" fill="none"/>
+    </g>
+    <g id="platine" transform="translate(1133.876 713.876)" fill="#296500" stroke="#707070" stroke-width="1">
+      <circle cx="289" cy="289" r="289" stroke="none"/>
+      <circle cx="289" cy="289" r="288.5" fill="none"/>
+    </g>
+    <rect id="Rechteck_10" data-name="Rechteck 10" width="246" height="5" transform="translate(1123 960)" fill="#979494"/>
+    <rect id="Rechteck_14" data-name="Rechteck 14" width="246" height="5" transform="translate(1422.876 702) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_15" data-name="Rechteck 15" width="246" height="5" transform="translate(1425.376 1053) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_16" data-name="Rechteck 16" width="101" height="5" transform="translate(1272 1033)" fill="#979494"/>
+    <rect id="Rechteck_17" data-name="Rechteck 17" width="246" height="5" transform="translate(1439.376 1053) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_18" data-name="Rechteck 18" width="246" height="5" transform="translate(1453.376 1053) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_20" data-name="Rechteck 20" width="97" height="5" transform="translate(1465.912 1211.88) rotate(45)" fill="#979494"/>
+    <rect id="Rechteck_19" data-name="Rechteck 19" width="162" height="5" transform="translate(1467.376 1053) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_21" data-name="Rechteck 21" width="246" height="5" transform="translate(1408.876 702) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_22" data-name="Rechteck 22" width="246" height="5" transform="translate(1436.876 702) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_23" data-name="Rechteck 23" width="246" height="5" transform="translate(1450.876 702) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_24" data-name="Rechteck 24" width="246" height="5" transform="translate(1206.794 775.516) rotate(45)" fill="#979494"/>
+    <rect id="Rechteck_25" data-name="Rechteck 25" width="246" height="5" transform="translate(1123 974)" fill="#979494"/>
+    <rect id="Rechteck_26" data-name="Rechteck 26" width="246" height="5" transform="translate(1123 988)" fill="#979494"/>
+    <rect id="Rechteck_27" data-name="Rechteck 27" width="246" height="5" transform="translate(1123 1002)" fill="#979494"/>
+    <rect id="Rechteck_28" data-name="Rechteck 28" width="246" height="5" transform="translate(1380.742 1045.794) rotate(135)" fill="#979494"/>
+    <rect id="Rechteck_44" data-name="Rechteck 44" width="137" height="5" transform="translate(1565.876 725) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_45" data-name="Rechteck 45" width="137" height="5" transform="translate(1577.876 746) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_46" data-name="Rechteck 46" width="137" height="5" transform="translate(1589.876 744) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_47" data-name="Rechteck 47" width="137" height="5" transform="translate(1601.876 742) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_48" data-name="Rechteck 48" width="137" height="5" transform="translate(1613.876 751) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_49" data-name="Rechteck 49" width="24" height="5" transform="translate(1625.876 835) rotate(90)" fill="#979494"/>
+    <rect id="Rechteck_50" data-name="Rechteck 50" width="33.91" height="5" transform="translate(1648.39 814.528) rotate(135)" fill="#979494"/>
+    <rect id="Rechteck_51" data-name="Rechteck 51" width="137" height="5" transform="translate(1553.876 732) rotate(90)" fill="#979494"/>
+    <path id="Pfad_8" data-name="Pfad 8" d="M1117.591,589.635h238.342" transform="translate(361 459)" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_1" data-name="Pfad 1" d="M1551.376,902.216V923l-32,32h-41.85" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_2" data-name="Pfad 2" d="M1202.749,441.833V464L1157,509.749l-38.724.251" transform="translate(361 459)" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_3" data-name="Pfad 3" d="M1575.376,902.216V923L1518,980.376h-39.384" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_4" data-name="Pfad 4" d="M1587.376,902.216V923L1518,992.376h-38.394" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_5" data-name="Pfad 5" d="M1599.376,902.216V923L1518,1004.376h-37.734" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_6" data-name="Pfad 6" d="M1611.376,900.833V923L1518,1016.376h-38.724" fill="none" stroke="#979494" stroke-width="5"/>
+    <path id="Pfad_7" data-name="Pfad 7" d="M1623.376,902.216V923L1518,1028.376h-37.4" fill="none" stroke="#979494" stroke-width="5"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1105.512 685.328)" fill="none" stroke="#7b7b7b" stroke-width="30">
+      <ellipse cx="317.394" cy="317.094" rx="317.394" ry="317.094" stroke="none"/>
+      <ellipse cx="317.394" cy="317.094" rx="302.394" ry="302.094" fill="none"/>
+    </g>
+    <g id="Bolts">
+      <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1415.164 693.062)" fill="#fff"/>
+      <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1415.164 1296.313)" fill="#fff"/>
+      <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1717.076 993.688)" fill="#fff"/>
+      <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1113.253 994.688)" fill="#fff"/>
+      <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1201.504 781.229)" fill="#fff"/>
+      <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1628.824 1208.146)" fill="#fff"/>
+      <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1201.504 1208.146)" fill="#fff"/>
+      <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="7.741" cy="7.734" rx="7.741" ry="7.734" transform="translate(1628.824 781.229)" fill="#fff"/>
+    </g>
+    <rect id="Rechteck_11" data-name="Rechteck 11" width="120" height="120" rx="7" transform="translate(1363 943)"/>
+    <rect id="Rechteck_12" data-name="Rechteck 12" width="100" height="100" rx="10" transform="translate(1373 953)" fill="#727272"/>
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(1254 1026)" fill="none" stroke="#979494" stroke-width="5">
+      <circle cx="9.5" cy="9.5" r="9.5" stroke="none"/>
+      <circle cx="9.5" cy="9.5" r="7" fill="none"/>
+    </g>
+    <g id="Microchip" transform="translate(361 459)">
+      <rect id="Mosfet" width="101" height="37" transform="translate(1176 402)" fill="#3b3b3b"/>
+      <rect id="Rechteck_29" data-name="Rechteck 29" width="7" height="5" transform="translate(1187 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_30" data-name="Rechteck 30" width="7" height="5" transform="translate(1199 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_31" data-name="Rechteck 31" width="7" height="5" transform="translate(1211 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_32" data-name="Rechteck 32" width="7" height="5" transform="translate(1223 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_33" data-name="Rechteck 33" width="7" height="5" transform="translate(1235 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_34" data-name="Rechteck 34" width="7" height="5" transform="translate(1247 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_35" data-name="Rechteck 35" width="7" height="5" transform="translate(1259 439)" fill="#a1a1a1"/>
+      <rect id="Rechteck_36" data-name="Rechteck 36" width="7" height="5" transform="translate(1187 397)" fill="#a1a1a1"/>
+      <rect id="Rechteck_37" data-name="Rechteck 37" width="7" height="5" transform="translate(1199 397)" fill="#a1a1a1"/>
+      <rect id="Rechteck_38" data-name="Rechteck 38" width="7" height="5" transform="translate(1211 397)" fill="#a1a1a1"/>
+      <rect id="Rechteck_39" data-name="Rechteck 39" width="7" height="5" transform="translate(1223 397)" fill="#a1a1a1"/>
+      <rect id="Rechteck_40" data-name="Rechteck 40" width="7" height="5" transform="translate(1235 397)" fill="#a1a1a1"/>
+      <rect id="Rechteck_41" data-name="Rechteck 41" width="7" height="5" transform="translate(1247 397)" fill="#a1a1a1"/>
+      <rect id="Rechteck_42" data-name="Rechteck 42" width="7" height="5" transform="translate(1259 397)" fill="#a1a1a1"/>
+    </g>
   </g>
 </svg>
